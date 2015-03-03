@@ -155,12 +155,6 @@ class CalendarView: UIView {
                 let dayLabel = UILabel(frame: CGRect(x: 4, y: 4, width: width, height: 20))
                 dayView.addSubview(dayLabel)
                 
-                let trashLabel = UILabel(frame: CGRect(x: 4, y: dayLabel.frame.maxY , width: width - 4, height: height - 20))//height - 20))
-//                trashLabel.text = "不燃ごみ可燃ごみ"
-                trashLabel.numberOfLines = 0
-//                trashLabel.sizeToFit()
-                
-                dayView.addSubview(trashLabel)
                 weeklyView.addSubview(dayView)
                 
                 let recognizer = UITapGestureRecognizer(target: self, action: "touchDay:")
