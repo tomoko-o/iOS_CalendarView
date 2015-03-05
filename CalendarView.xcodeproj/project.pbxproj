@@ -60,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59867A021AA815750031055C /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				59C7BEA61A9CD26E00EFF814 /* CalendarView.swift */,
+				59C7BEA81A9DEB5A00EFF814 /* CalendarData.swift */,
+			);
+			name = CalendarView;
+			sourceTree = "<group>";
+		};
 		59C7BE761A97688700EFF814 = {
 			isa = PBXGroup;
 			children = (
@@ -81,14 +90,13 @@
 		59C7BE811A97688700EFF814 /* CalendarView */ = {
 			isa = PBXGroup;
 			children = (
+				59867A021AA815750031055C /* CalendarView */,
 				59C7BE841A97688700EFF814 /* AppDelegate.swift */,
 				59C7BE861A97688700EFF814 /* CalendarViewController.swift */,
 				59C7BE881A97688700EFF814 /* Main.storyboard */,
 				59C7BE8B1A97688700EFF814 /* Images.xcassets */,
 				59C7BE8D1A97688700EFF814 /* LaunchScreen.xib */,
 				59C7BE821A97688700EFF814 /* Supporting Files */,
-				59C7BEA61A9CD26E00EFF814 /* CalendarView.swift */,
-				59C7BEA81A9DEB5A00EFF814 /* CalendarData.swift */,
 			);
 			path = CalendarView;
 			sourceTree = "<group>";
@@ -415,6 +423,7 @@
 				59C7BEA01A97688700EFF814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59C7BEA11A97688700EFF814 /* Build configuration list for PBXNativeTarget "CalendarViewTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +432,7 @@
 				59C7BEA31A97688700EFF814 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

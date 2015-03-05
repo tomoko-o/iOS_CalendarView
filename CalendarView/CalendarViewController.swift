@@ -14,8 +14,13 @@ class CalendarViewController: UIViewController, CalendarViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var frame = UIScreen.mainScreen().applicationFrame
+        println(frame)
+        println(UIScreen.mainScreen().bounds)
+//        frame.origin.y = 
 
-        let calendarView = CalendarView(frame: UIScreen.mainScreen().bounds, year: 2015, month: 2)
+        let calendarView = CalendarView(frame: frame, year: 2015, month: 2)
         calendarView.delegate = self
         self.view.addSubview(calendarView)
         

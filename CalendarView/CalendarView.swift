@@ -19,11 +19,8 @@ class CalendarView: UIView {
 
     var delegate :CalendarViewDelegate? = nil
 
-    private let TAB_SIZE: CGFloat = 49.0
-    private let STATUSBAR_HEIGHT: CGFloat = 20.0
     private let MONTH_LABEL_HEIGHT: CGFloat = 60.0
     private let WEEKDAY_HEIGHT: CGFloat = 24.0
-    private let AD_HEIGHT: CGFloat = 40.0
     
     private let SUBVIEW_YEARMONTH = 0
     private let SUBVIEW_MONTHLY = 2
@@ -37,7 +34,7 @@ class CalendarView: UIView {
 
     init(frame: CGRect, year: Int, month: Int){
 
-        super.init(frame: frame)
+        super.init(frame: UIScreen.mainScreen().bounds)
         
         self.year = year
         self.month = month
@@ -52,7 +49,7 @@ class CalendarView: UIView {
         let calendarView = UIView(frame: frame)
         
         let frameSize = frame.size
-        var yOffset: CGFloat = STATUSBAR_HEIGHT
+        var yOffset: CGFloat = 0
         
         //****************************
         // 年月のViewをセットする
